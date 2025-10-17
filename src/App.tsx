@@ -1,6 +1,14 @@
-import { Phone, Wrench, Zap, Home, Lightbulb, Fan, Wind, Droplet, Settings, CheckCircle, Award, Clock, DollarSign, Heart, MapPin, Mail, MessageCircle } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Phone, Wrench, Zap, Home, Lightbulb, Fan, Wind, Droplet, Settings, CheckCircle, Award, Clock, DollarSign, Heart, MapPin, MessageCircle } from 'lucide-react';
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    // Show popup on page load
+    setShowModal(true);
+  }, []);
+
   const whatsappBase = "https://wa.me/918247387557";
   const premiumMsg = "?text=Hi%20Sunitha%20Electrical%2C%20I%20want%20to%20book%20a%20Premium%20Appointment.%20Please%20share%20available%20slots%20and%20charges.";
   const normalMsg = "?text=Hi%20Sunitha%20Electrical%2C%20I%20want%20to%20book%20a%20Normal%20Appointment.%20Please%20confirm%20available%20time.";
@@ -41,21 +49,53 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Under Development Popup */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg p-8 max-w-sm mx-auto text-center shadow-lg">
+            <h2 className="text-2xl font-bold text-red-600 mb-4">
+              🚧 Website Under Development
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Hi there! This website is still being developed. Some features may not be available yet.
+            </p>
+            <button
+              onClick={() => setShowModal(false)}
+              className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors"
+            >
+              Got it!
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Header */}
-      <header className="bg-white shadow-md sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-center md:text-left">
-              <h1 className="text-2xl md:text-3xl font-bold text-red-600">
+      <header className="relative shadow-md sticky top-0 z-50 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://media.istockphoto.com/id/186990563/photo/electrical-spark-between-two-insulated-copper-wires.jpg?s=612x612&w=0&k=20&c=Rz2YDh7ohXt9LZ7ZamvjOI3svLRR30p8DwT8_sS9O5g=')",
+            filter: "blur(0.5px)",
+            transform: "scale(1.05)",
+          }}
+        ></div>
+
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
+        <div className="relative container mx-auto px-4 py-8 text-center text-white">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+            <div>
+              <h1 className="text-4xl md:text-3xl font-bold text-black-400 drop-shadow-[0_0_10px_rgba(255,700,0,0.9)]">
                 Sunitha Electrical & Winding Works
               </h1>
-              <p className="text-sm md:text-base text-gray-700 mt-1">
+              <p className="text-2xl md:text-base text-black-100 mt-2">
                 Your Trusted Electrical Repair and Service Partner
               </p>
             </div>
+
             <a
               href="tel:8247387557"
-              className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-lg"
+              className="flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-lg"
             >
               <Phone className="w-5 h-5" />
               <span className="font-semibold">8247387557</span>
@@ -77,38 +117,101 @@ function App() {
           </div>
 
           {/* Service Icons Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <Home className="w-12 h-12 mx-auto text-blue-600 mb-2" />
-              <p className="text-sm font-medium">House Wiring</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-6xl mx-auto">
+            <div className="relative rounded-lg overflow-hidden shadow-md h-60">
+              <img
+                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                alt="House Wiring"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full px-4 py-3 flex items-center gap-2">
+                <Home className="w-8 h-8 text-blue-400" />
+                <p className="text-white font-semibold">House Wiring</p>
+              </div>
             </div>
-            <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <Settings className="w-12 h-12 mx-auto text-red-600 mb-2" />
-              <p className="text-sm font-medium">Motor Winding</p>
+
+            <div className="relative rounded-lg overflow-hidden shadow-md h-60">
+              <img
+                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                alt="Motor Winding"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full px-4 py-3 flex items-center gap-2">
+                <Settings className="w-8 h-8 text-red-400" />
+                <p className="text-white font-semibold">Motor Winding</p>
+              </div>
             </div>
-            <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <Lightbulb className="w-12 h-12 mx-auto text-yellow-600 mb-2" />
-              <p className="text-sm font-medium">Profile Lighting</p>
+
+            <div className="relative rounded-lg overflow-hidden shadow-md h-60">
+              <img
+                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                alt="Profile Lighting"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full px-4 py-3 flex items-center gap-2">
+                <Lightbulb className="w-8 h-8 text-yellow-400" />
+                <p className="text-white font-semibold">Profile Lighting</p>
+              </div>
             </div>
-            <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <Zap className="w-12 h-12 mx-auto text-blue-600 mb-2" />
-              <p className="text-sm font-medium">False Ceiling</p>
+
+            <div className="relative rounded-lg overflow-hidden shadow-md h-60">
+              <img
+                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                alt="False Ceiling"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full px-4 py-3 flex items-center gap-2">
+                <Zap className="w-8 h-8 text-blue-400" />
+                <p className="text-white font-semibold">False Ceiling</p>
+              </div>
             </div>
-            <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <Fan className="w-12 h-12 mx-auto text-gray-700 mb-2" />
-              <p className="text-sm font-medium">Mixer Repair</p>
+
+            <div className="relative rounded-lg overflow-hidden shadow-md h-60">
+              <img
+                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                alt="Mixer Repair"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full px-4 py-3 flex items-center gap-2">
+                <Fan className="w-8 h-8 text-gray-400" />
+                <p className="text-white font-semibold">Mixer Repair</p>
+              </div>
             </div>
-            <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <Wind className="w-12 h-12 mx-auto text-cyan-600 mb-2" />
-              <p className="text-sm font-medium">Cooler Service</p>
+
+            <div className="relative rounded-lg overflow-hidden shadow-md h-60">
+              <img
+                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                alt="Cooler Service"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full px-4 py-3 flex items-center gap-2">
+                <Wind className="w-8 h-8 text-cyan-400" />
+                <p className="text-white font-semibold">Cooler Service</p>
+              </div>
             </div>
-            <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <Droplet className="w-12 h-12 mx-auto text-orange-600 mb-2" />
-              <p className="text-sm font-medium">Geyser Repair</p>
+
+            <div className="relative rounded-lg overflow-hidden shadow-md h-60">
+              <img
+                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                alt="Geyser Repair"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full px-4 py-3 flex items-center gap-2">
+                <Droplet className="w-8 h-8 text-orange-400" />
+                <p className="text-white font-semibold">Geyser Repair</p>
+              </div>
             </div>
-            <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <Wrench className="w-12 h-12 mx-auto text-red-600 mb-2" />
-              <p className="text-sm font-medium">Motor Repair</p>
+
+            <div className="relative rounded-lg overflow-hidden shadow-md h-60">
+              <img
+                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                alt="Motor Repair"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full px-4 py-3 flex items-center gap-2">
+                <Wrench className="w-8 h-8 text-red-400" />
+                <p className="text-white font-semibold">Motor Repair</p>
+              </div>
             </div>
           </div>
 
@@ -268,7 +371,7 @@ function App() {
                   "At Sunitha Electrical, we don't just fix problems – we build lasting relationships with our customers through honest service and quality work."
                 </p>
                 <p className="text-right font-semibold text-gray-900">
-                  - Hemanth (Chintu), Owner
+                  - Hemanth (Chintu), Owner 
                 </p>
               </div>
             </div>
