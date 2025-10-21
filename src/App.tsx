@@ -120,7 +120,7 @@ function App() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-6xl mx-auto">
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                src="Website_Images/House_wiring.jpg"
                 alt="House Wiring"
                 className="w-full h-full object-cover"
               />
@@ -132,7 +132,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                src="Website_Images/motor winding.jpg"
                 alt="Motor Winding"
                 className="w-full h-full object-cover"
               />
@@ -144,7 +144,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                src="Website_Images/profile_lighting.jpg"
                 alt="Profile Lighting"
                 className="w-full h-full object-cover"
               />
@@ -156,7 +156,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                src="Website_Images/False Ceiling.jpg"
                 alt="False Ceiling"
                 className="w-full h-full object-cover"
               />
@@ -168,7 +168,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                src="Website_Images/Mixer repair.jpg"
                 alt="Mixer Repair"
                 className="w-full h-full object-cover"
               />
@@ -180,7 +180,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                src="Website_Images/cooler.jpg"
                 alt="Cooler Service"
                 className="w-full h-full object-cover"
               />
@@ -192,7 +192,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                src="Website_Images/Geyser-service-1.jpg"
                 alt="Geyser Repair"
                 className="w-full h-full object-cover"
               />
@@ -204,7 +204,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="https://images.pexels.com/photos/414519/pexels-photo-414519.jpeg"
+                src="Website_Images/Motor_repair.jpg"
                 alt="Motor Repair"
                 className="w-full h-full object-cover"
               />
@@ -370,9 +370,10 @@ function App() {
                 <p className="text-gray-800 italic mb-2">
                   "At Sunitha Electrical, we don't just fix problems – we build lasting relationships with our customers through honest service and quality work."
                 </p>
-                <p className="text-right font-semibold text-gray-900">
-                  - Hemanth (Chintu), Owner 
-                </p>
+                <div className="text-right font-semibold text-gray-900">
+                  <p>- Hemanth sai, B.Tech (Owner)</p>
+                  <p>- Ex Java Full Stack Developer, Electrician</p>
+                </div>
               </div>
             </div>
           </div>
