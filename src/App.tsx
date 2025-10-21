@@ -120,7 +120,7 @@ function App() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-6xl mx-auto">
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="Website_Images/House_wiring.jpg"
+                src="https://raw.githubusercontent.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/refs/heads/main/Website_Images/House_wiring.jpg"
                 alt="House Wiring"
                 className="w-full h-full object-cover"
               />
@@ -132,7 +132,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="Website_Images/motor winding.jpg"
+                src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/motor%20winding.jpg"
                 alt="Motor Winding"
                 className="w-full h-full object-cover"
               />
@@ -144,7 +144,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="Website_Images/profile_lighting.jpg"
+                src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/profile_lighting.jpg"
                 alt="Profile Lighting"
                 className="w-full h-full object-cover"
               />
@@ -156,7 +156,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="Website_Images/False Ceiling.jpg"
+                src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/False%20Ceiling.jpg"
                 alt="False Ceiling"
                 className="w-full h-full object-cover"
               />
@@ -168,7 +168,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="Website_Images/Mixer repair.jpg"
+                src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/Mixer%20repair.jpg"
                 alt="Mixer Repair"
                 className="w-full h-full object-cover"
               />
@@ -180,7 +180,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="Website_Images/cooler.jpg"
+                src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/cooler.jpg"
                 alt="Cooler Service"
                 className="w-full h-full object-cover"
               />
@@ -192,7 +192,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="Website_Images/Geyser-service-1.jpg"
+                src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/Geyser-service-1.jpg"
                 alt="Geyser Repair"
                 className="w-full h-full object-cover"
               />
@@ -204,7 +204,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="Website_Images/Motor_repair.jpg"
+                src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/Motor_repair.jpg"
                 alt="Motor Repair"
                 className="w-full h-full object-cover"
               />
