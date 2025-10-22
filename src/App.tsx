@@ -248,6 +248,40 @@ function App() {
         </div>
       </section>
 
+
+
+
+
+
+
+      {/* Shop Image Section */}
+      <section className="py-20 bg-red-600">
+  <div className="container mx-auto px-4 text-center">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+      Our Shop
+    </h2>
+    <p className="text-gray-700 mb-10 max-w-2xl mx-auto">
+      Visit our store for all types of electrical repairs, winding works, and household services. 
+      We provide professional quality with a personal touch.
+    </p>
+
+    {/* Shop Image Card */}
+    <div className="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-white">
+      <img
+        src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/SHOP1.jpg?raw=true"
+        alt="Sunitha Electrical & Winding Works Shop"
+        className="w-full h-80 object-cover transform hover:scale-105 transition-transform duration-500"
+      />
+      <div className="bg-blue-600 text-white py-3">
+        <p className="font-semibold tracking-wide">
+          Sunitha Electrical & Winding Works
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       {/* Our Services Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -273,31 +307,105 @@ function App() {
       </section>
 
       {/* House Wiring Gallery */}
+      {/* House Wiring Gallery */}
       <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            House Wiring Projects
-          </h2>
-          <p className="text-center text-gray-600 mb-12">
-            Professional wiring installations and setups
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
+      House Wiring Projects
+    </h2>
+    <p className="text-center text-gray-600 mb-12">
+      Professional wiring installations and setups
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Image 1 */}
+      <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+        <img
+          src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/HW1.jpg?raw=true"
+          alt="House wiring project 1"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-4">
+          <p className="text-sm text-gray-700 text-center">
+            Residential wiring setup
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {wiringGallery.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
-              >
-                <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center">
-                  <Home className="w-24 h-24 text-blue-600 opacity-50" />
-                </div>
-                <div className="p-4">
-                  <p className="text-sm text-gray-600 text-center">{item.alt}</p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
-      </section>
+      </div>
+
+      {/* Image 2 */}
+      <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+        <img
+          src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/HW2.jpg?raw=true"
+          alt="House wiring project 2"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-4">
+          <p className="text-sm text-gray-700 text-center">
+            Switchboard wiring layout
+          </p>
+        </div>
+      </div>
+
+      {/* Image 3 */}
+      <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+        <img
+          src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/HW3.jpg?raw=true"
+          alt="House wiring project 3"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-4">
+          <p className="text-sm text-gray-700 text-center">
+            Ceiling wiring installation
+          </p>
+        </div>
+      </div>
+
+      {/* Dummy Image 4 */}
+      <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+        <img
+          src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/comingsoon.jpg?raw=true"
+          alt="House wiring project 4"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-4">
+          <p className="text-sm text-gray-700 text-center">
+            Apartment wiring design
+          </p>
+        </div>
+      </div>
+
+      {/* Dummy Image 5 */}
+      <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+        <img
+          src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/comingsoon.jpg?raw=true"
+          alt="House wiring project 5"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-4">
+          <p className="text-sm text-gray-700 text-center">
+            Wiring board setup
+          </p>
+        </div>
+      </div>
+
+      {/* Dummy Image 6 */}
+      <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+        <img
+          src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/comingsoon.jpg?raw=true"
+          alt="House wiring project 6"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-4">
+          <p className="text-sm text-gray-700 text-center">
+            Conduit pipe wiring work
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Winding Works Gallery */}
       <section className="py-16 bg-white">
