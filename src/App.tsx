@@ -169,12 +169,12 @@ function App() {
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
                 src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/Mixer%20repair.jpg?raw=true"
-                alt="Mixer Repair"
+                alt="Fan Winding & Mixer Repair"
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full px-4 py-3 flex items-center gap-2">
                 <Fan className="w-8 h-8 text-gray-400" />
-                <p className="text-white font-semibold">Mixer Repair</p>
+                <p className="text-white font-semibold">Fan Winding & Mixer Repair</p>
               </div>
             </div>
 
@@ -255,7 +255,7 @@ function App() {
 
 
       {/* Shop Image Section */}
-      <section className="py-20 bg-red-600">
+      <section className="py-20 bg-gradient-to-r from-red-300 via-violet to-blue-300">
   <div className="container mx-auto px-4 text-center">
     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
       Our Shop
