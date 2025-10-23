@@ -168,7 +168,7 @@ function App() {
 
             <div className="relative rounded-lg overflow-hidden shadow-md h-60">
               <img
-                src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/Mixer%20repair.jpg?raw=true"
+                src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/fan%20winding%20machine.jpg?raw=true"
                 alt="Fan Winding & Mixer Repair"
                 className="w-full h-full object-cover"
               />
@@ -360,54 +360,15 @@ function App() {
         </div>
       </div>
 
-      {/* Dummy Image 4 */}
-      <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-        <img
-          src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/comingsoon.jpg?raw=true"
-          alt="House wiring project 4"
-          className="w-full h-64 object-cover"
-        />
-        <div className="p-4">
-          <p className="text-sm text-gray-700 text-center">
-            Apartment wiring design
-          </p>
-        </div>
-      </div>
-
-      {/* Dummy Image 5 */}
-      <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-        <img
-          src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/comingsoon.jpg?raw=true"
-          alt="House wiring project 5"
-          className="w-full h-64 object-cover"
-        />
-        <div className="p-4">
-          <p className="text-sm text-gray-700 text-center">
-            Wiring board setup
-          </p>
-        </div>
-      </div>
-
-      {/* Dummy Image 6 */}
-      <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-        <img
-          src="https://github.com/HemanthsaiBurla/sunitha-electrical-and-winding-works/blob/main/Website_Images/comingsoon.jpg?raw=true"
-          alt="House wiring project 6"
-          className="w-full h-64 object-cover"
-        />
-        <div className="p-4">
-          <p className="text-sm text-gray-700 text-center">
-            Conduit pipe wiring work
-          </p>
-        </div>
-      </div>
+      
+      
     </div>
   </div>
 </section>
 
 
 
-      {/* Winding Works Gallery */}
+      {/* Winding Works Gallery
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
@@ -433,6 +394,7 @@ function App() {
           </div>
         </div>
       </section>
+       */}
 
       {/* Why Choose Us Section */}
       <section className="py-16 bg-gradient-to-br from-yellow-50 to-yellow-100">
@@ -529,16 +491,35 @@ function App() {
             </div>
           </div>
 
-          {/* Map Placeholder */}
-          <div className="mt-12 max-w-4xl mx-auto">
-            <div className="bg-gray-800 rounded-lg overflow-hidden shadow-xl h-64 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
-                <p className="text-gray-400">Google Maps Location</p>
-                <p className="text-sm text-gray-500 mt-2">Map integration available</p>
-              </div>
-            </div>
-          </div>
+          {/* Map Placeholder / Dummy Location */}
+<div className="mt-12 max-w-4xl mx-auto">
+  <div className="bg-gray-800 rounded-lg overflow-hidden shadow-xl h-64">
+    {/* Dummy Google Map Embed */}
+    <iframe
+      title="Sunitha Electrical & Winding Works Location"
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d237.14439455191453!2d79.53324106653102!3d18.010796836979864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDAwJzM4LjgiTiA3OcKwMzEnNTkuOSJF!5e0!3m2!1sen!2sin!4v1761189126288!5m2!1sen!2sin"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen={false}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+
+  {/* Caption */}
+  <div className="text-center mt-4">
+    <p className="text-gray-700 font-semibold">
+      Sunitha Electrical & Winding Works — Hanamkonda
+    </p>
+    <p className="text-gray-500 text-sm">
+      Jawahar colony, opposite to road no 1, beside kiranam, waddepally, Hanamkonda
+    </p>
+  </div>
+</div>
+
+
+
         </div>
       </section>
 
